@@ -156,10 +156,15 @@ body {
 
 .location-card {
     margin: 0;
+    display: flex;
 }
 
 .location-info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .location-info h3 {
@@ -187,6 +192,9 @@ body {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid var(--accent-color);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .location-details p {
@@ -195,17 +203,26 @@ body {
     color: var(--text-dark);
 }
 
+.location-action {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
 .map-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 20px;
-    padding: 10px 24px;
+    width: fit-content;
+    padding: 9px 16px;
     background: var(--primary-color);
     color: var(--white);
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
@@ -251,6 +268,8 @@ body {
     content: '•';
     position: absolute;
     left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: bold;
