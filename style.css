@@ -456,6 +456,26 @@ body {
     margin-top: 20px;
 }
 
+/* Info Section */
+.info-box {
+    text-align: center;
+}
+
+.info-text {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.info-text:last-child {
+    margin-bottom: 0;
+}
+
+.info-text strong {
+    color: var(--secondary-color);
+}
+
 /* Footer */
 footer {
     background: var(--secondary-color);
